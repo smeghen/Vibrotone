@@ -11083,5 +11083,13 @@ header.masthead-shockwave h1, header.masthead-shockwave .h1 {
 }
 
 .treatment-nav{
-  color: #000 !important;
+  color: #212529 !important;
 }
+
+@media (max-width: 992px) {
+.treatment-nav{
+  display: none;
+  color: #212529 !important;
+}
+}
+
