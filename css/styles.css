@@ -11151,3 +11151,10 @@ header.masthead-treatments h1, header.masthead-treatments .h1 {
   }
 }
 
+.logo-navbar {
+display: inline-block!important;
+}
+
+.font-weight-light{
+  font-weight: 0!important;
+}
