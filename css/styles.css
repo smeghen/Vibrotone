@@ -11164,3 +11164,8 @@ display: inline-block!important;
   height:100%;
   padding-left: 2%;
 }
+
+.pill-text{
+  font-size: 1.0rem !important;
+  padding: 0.5rem;
+}
