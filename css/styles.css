@@ -10906,6 +10906,13 @@ hr.divider {
   opacity: 1;
 }
 
+hr.divider-blank {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  opacity: 0;
+}
+
 hr.divider-light {
   background-color: #85ac1c;
 }
