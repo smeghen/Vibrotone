@@ -57,31 +57,60 @@
                 </div>
         </nav>
 
-        <!-- About-->
-        <section class="page-section bg-primary privacy" id="#">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h1 class="text-white mt-0">Privacy Policy</h1>
-                        <hr class="divider divider-light" />
-                        <iframe id='cliniko-66177799' src='https://vibrotone-pain-and-injury-clinic.eu1.cliniko.com/bookings?embedded=true' frameborder='0' scrolling='auto' width='100%' height='1000' style='pointer-events: auto;'></iframe>
-<script type='text/javascript'>
-  window.addEventListener('message', function handleIFrameMessage (e) {
-    var clinikoBookings = document.getElementById('cliniko-66177799');
-    if (typeof e.data !== 'string') return;
-    if (e.data.search('cliniko-bookings-resize') > -1) {
-      var height = Number(e.data.split(':')[1]);
-      clinikoBookings.style.height = height + 'px';
-    }
-    e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
-  });
-</script>
-                        
-                        
+                <!-- Masthead-->
+                <header class="masthead">
+                    <div class="container px-4 px-lg-5 h-100">
+                        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                            <div class="col-lg-8 align-self-end">
+                                <h1 class="text-white font-weight-bold"><span>Book an Appointment</span></h1>
+                                <hr class="divider" />
+                            </div>
+                            <div class="col-lg-8 align-self-baseline">
+                                <iframe id='cliniko-66177799' src='https://vibrotone-pain-and-injury-clinic.eu1.cliniko.com/bookings?embedded=true' frameborder='0' scrolling='auto' width='100%' height='1000' style='pointer-events: auto;'></iframe>
+        <script type='text/javascript'>
+          window.addEventListener('message', function handleIFrameMessage (e) {
+            var clinikoBookings = document.getElementById('cliniko-66177799');
+            if (typeof e.data !== 'string') return;
+            if (e.data.search('cliniko-bookings-resize') > -1) {
+              var height = Number(e.data.split(':')[1]);
+              clinikoBookings.style.height = height + 'px';
+            }
+            e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
+          });
+        </script>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </header>
+                <!--
+              
+                <header class="masthead">
+                    <div class="container px-8 px-lg-10">
+                        <div class="row gx-8 gx-lg-10 justify-content-center">
+                            <div class="col-lg-10 text-center">
+                                <h1 class="text-white mt-0">Book an Appointment</h1>
+                                <hr class="divider divider-light" />
+                                <iframe id='cliniko-66177799' src='https://vibrotone-pain-and-injury-clinic.eu1.cliniko.com/bookings?embedded=true' frameborder='0' scrolling='auto' width='100%' height='1000' style='pointer-events: auto;'></iframe>
+        <script type='text/javascript'>
+          window.addEventListener('message', function handleIFrameMessage (e) {
+            var clinikoBookings = document.getElementById('cliniko-66177799');
+            if (typeof e.data !== 'string') return;
+            if (e.data.search('cliniko-bookings-resize') > -1) {
+              var height = Number(e.data.split(':')[1]);
+              clinikoBookings.style.height = height + 'px';
+            }
+            e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
+          });
+        </script>
+        -->
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+        
 
         <!-- Footer
         <footer class="bg-light py-5">
