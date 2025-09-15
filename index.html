@@ -279,6 +279,18 @@ We’re excited to offer professional foot assessments and custom orthotic solut
             </div>
             </div>
         </section>
+
+                    <!-- Modal -->
+            <div id="centerModal" class="modal-overlay">
+            <div class="modal-box">
+                <span class="close">&times;</span>
+                <h2>Important Notice – Online Bookings</h2>
+                <p>From 1st October, all online bookings will need to be paid for at the time of booking.
+            </p>
+            <p>This change is being introduced due to the high number of last-minute cancellations and missed appointments. Taking payment upfront will help us ensure that appointment times are reserved for customers who are committed to attending.</p>
+            <p>We appreciate your understanding and continued support.</p>  
+            </div>
+            </div>
         <!--
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">VIBROTONE Pain & Inury Clinic</p><p>39 Mac Oisin Pl,</p><p>Dromod Beg,</p><p>Dromod,</p><p>Co. Leitrim</p><p>N41 P520</p></div>
@@ -308,5 +320,34 @@ We’re excited to offer professional foot assessments and custom orthotic solut
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+                    <script>
+            // Get modal elements
+            const modal = document.getElementById("centerModal");
+            const closeBtn = modal.querySelector(".close");
+
+            // Show modal on page load
+            window.onload = () => {
+            modal.style.display = "flex";
+            setTimeout(() => modal.classList.add("show"), 10);
+            document.body.style.overflow = 'hidden'; // Disable background scroll
+            };
+
+            // Close modal
+            const closeModal = () => {
+            modal.classList.remove("show");
+            setTimeout(() => {
+                modal.style.display = "none";
+                document.body.style.overflow = ''; // Re-enable background scroll
+            }, 500);
+            };
+
+            closeBtn.onclick = closeModal;
+
+            // Optional: close when clicking outside modal box
+            modal.onclick = (e) => {
+            if (e.target === modal) closeModal();
+            };
+            </script>
     </body>
 </html>

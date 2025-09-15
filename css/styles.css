@@ -11231,3 +11231,54 @@ display: inline-block!important;
   cursor: pointer;
   border-radius: 3px;
 }
+
+
+.modal-overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent background scroll */
+}
+
+/* Modal box */
+.modal-box {
+  position: relative;
+  background-color: #a4c64c; /* Red background */
+  color: black;
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 50rem;
+  width: 90%;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* Show modal animation */
+.modal-overlay.show .modal-box {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Close button */
+.modal-box .close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal-box .close:hover {
+  color: #ddd;
+}
