@@ -85,12 +85,15 @@
                              using a variety of therapies such as Shockwave, Dry needling and Soft Tissue treatments</p>
                       <!--  <a class="btn btn-primary btn-xl" href="#about">Find Out More</a> -->
                       <hr class="divider" />
-                      <p class="text-white font-weight-bold">Vibrotone now offers a new Online Booking System, allowing you to schedule your appointments at your convenience. </p>
+                      <p class="text-white font-weight-bold">Now offering personalised mobility and rehab plans, complete with video demonstrations and simple step-by-step guidance to make every exercise easy to follow. </p>
                       <p>   </p>
-                      <p><a class="btn btn-dark btn-sm" href="booking.html">Book Now</a></p>
-                      <p>   </p>  
                       <hr class="divider" />
-    <!--                  <p class="text-white font-weight-bold">
+                        <div class="container ">
+                               <div class="align-items-center justify-content-center text-center">
+            <img src="assets/img/Physitrack_small.jpg" alt="Image" class="img-fluid rounded col-lg-4 align-self-baseline">
+          </div>   
+                      <hr class="divider" />
+                      <p class="text-white font-weight-bold">
                        NOW AVAILABLE TO BOOK ONLINE: Foot Assessments & Custom Orthotics.
                        </p>
                        <p class="text-white font-weight-bold">
@@ -102,12 +105,12 @@ We’re excited to offer professional foot assessments and custom orthotic solut
                         <hr class="divider" />
                         <div class="container ">
                                <div class="align-items-center justify-content-center text-center">
-            <img src="assets/img/Orthotics.jpg" alt="Image" class="img-fluid rounded col-lg-4 align-self-baseline">
+            <img src="assets/img/orthotics_scan.jpg" alt="Image" class="img-fluid rounded col-lg-4 align-self-baseline">
           </div>
                   
                     <hr class="divider" />
 
-                                -->
+                                
                     
                             </div>
                         </div>
@@ -280,17 +283,18 @@ We’re excited to offer professional foot assessments and custom orthotic solut
             </div>
         </section>
 
-                    <!-- Modal -->
-            <div id="centerModal" class="modal-overlay">
-            <div class="modal-box">
-                <span class="close">&times;</span>
-                <h2>Important Notice – Online Bookings</h2>
-                <p>From 1st October, all online bookings will need to be paid for at the time of booking.
-            </p>
-            <p>This change is being introduced due to the high number of last-minute cancellations and missed appointments. Taking payment upfront will help us ensure that appointment times are reserved for customers who are committed to attending.</p>
-            <p>We appreciate your understanding and continued support.</p>  
-            </div>
-            </div>
+<!-- Modal -->
+<div id="centerModal" class="modal-overlay">
+  <div class="modal-box">
+    <span class="close">&times;</span>
+    <h2>Important Notice – Online Bookings</h2>
+    <p>From 1st October, all online bookings will need to be paid for at the time of booking.
+</p>
+<p>This change is being introduced due to the high number of last-minute cancellations and missed appointments. Taking payment upfront will help us ensure that appointment times are reserved for customers who are committed to attending.</p>
+<p>We appreciate your understanding and continued support.</p>  
+</div>
+</div>
+
         <!--
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">VIBROTONE Pain & Inury Clinic</p><p>39 Mac Oisin Pl,</p><p>Dromod Beg,</p><p>Dromod,</p><p>Co. Leitrim</p><p>N41 P520</p></div>
@@ -320,34 +324,34 @@ We’re excited to offer professional foot assessments and custom orthotic solut
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<script>
+// Get modal elements
+const modal = document.getElementById("centerModal");
+const closeBtn = modal.querySelector(".close");
 
-                    <script>
-            // Get modal elements
-            const modal = document.getElementById("centerModal");
-            const closeBtn = modal.querySelector(".close");
+// Show modal on page load
+window.onload = () => {
+  modal.style.display = "flex";
+  setTimeout(() => modal.classList.add("show"), 10);
+  document.body.style.overflow = 'hidden'; // Disable background scroll
+};
 
-            // Show modal on page load
-            window.onload = () => {
-            modal.style.display = "flex";
-            setTimeout(() => modal.classList.add("show"), 10);
-            document.body.style.overflow = 'hidden'; // Disable background scroll
-            };
+// Close modal
+const closeModal = () => {
+  modal.classList.remove("show");
+  setTimeout(() => {
+    modal.style.display = "none";
+    document.body.style.overflow = ''; // Re-enable background scroll
+  }, 500);
+};
 
-            // Close modal
-            const closeModal = () => {
-            modal.classList.remove("show");
-            setTimeout(() => {
-                modal.style.display = "none";
-                document.body.style.overflow = ''; // Re-enable background scroll
-            }, 500);
-            };
+closeBtn.onclick = closeModal;
 
-            closeBtn.onclick = closeModal;
+// Optional: close when clicking outside modal box
+modal.onclick = (e) => {
+  if (e.target === modal) closeModal();
+};
+</script>
 
-            // Optional: close when clicking outside modal box
-            modal.onclick = (e) => {
-            if (e.target === modal) closeModal();
-            };
-            </script>
     </body>
 </html>
